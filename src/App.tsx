@@ -14,6 +14,8 @@ import KeamananData from "./components/KeamananData"
 import RequestForm from "./components/RequestForm"
 import Contact from "./components/Contact"
 import AdminInformation from "./components/AdminInformation"
+import AdminDashboardNews from "./components/DashboardAdminNews"
+import News from "./components/News"; 
 
 
 function App() {
@@ -36,6 +38,9 @@ function App() {
           <Route path="permohonan" element={<RequestForm />} />
           <Route path="kontak" element={<Contact />} />
           <Route path="/informasi" element={<AdminInformation />} />
+          <Route path="tambah-berita" element={<AdminDashboardNews />} />
+          <Route path="berita" element={<News />} />
+          
 
         </Route>
       </Routes>
